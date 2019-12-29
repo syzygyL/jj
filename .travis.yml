@@ -17,12 +17,12 @@ after script: # 最后执行的命令
   - git config user.name"xming"
   - git config user.email"xming1001@163.com"
   - git add .
-  - git commit -m "代码是自动部署的哈"
+  - git commit -m "CI INFO"
   # 直接推到一个仓库
   - git push --force --quiet "https://${jjToken}@${GH_REF}" master:master
 
 branches:
-  only:r
+  only:
     - master #触发持续集成的分支
     
 env:
