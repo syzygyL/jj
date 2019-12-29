@@ -19,12 +19,12 @@ after script: # 最后执行的命令
   - git add .
   - git commit -m "代码是自动部署的哈"
   # 直接推到一个仓库
-  - git push --force --quiet "https://${jjToken}@${GH_REF}" # master:gh-pages
+  - git push --force --quiet "https://${jjToken}@${GH_REF}" master:master
 
 branches:
-  only:
+  only:r
     - master #触发持续集成的分支
     
 env:
   global: 
-    - GH_REF: github.com/xming1001/st.git #就是你 github上存放静态博客最终文件的合库地址末尾加上git
+    - GH_REF: github.com/xming1001/sr.git #就是你 github上存放静态博客最终文件的合库地址末尾加上git
