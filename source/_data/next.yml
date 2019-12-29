@@ -91,10 +91,11 @@ footer:
 # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+# 版权声明
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: true
+  post: false
   language:
 
 
@@ -120,10 +121,10 @@ scheme: Pisces
 # External url should start with http:// or https://
 menu:
   home: / || home
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
