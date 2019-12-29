@@ -107,3 +107,10 @@ deploy:
 auto_category:
  enable: true
  depth: 
+
+# 阅读全文
+excerpt:
+depth: 20
+excerpt_excludes: []
+more_excludes: []
+hideWholePostExcerpts: true
