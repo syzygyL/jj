@@ -43,3 +43,27 @@ for $inject_mixin in hexo-config('injects.mixin')
 // --------------------------------------------------
 for $inject_style in hexo-config('injects.style')
   @import $inject_style;
+
+
+// 增加底部图标跳动
+@keyframes heartAnimate {
+    0%,100%{transform:scale(1);}
+    10%,30%{transform:scale(0.9);}
+    20%,40%,60%,80%{transform:scale(1.1);}
+    50%,70%{transform:scale(1.1);}
+}
+
+// bgimg
+body {
+    background:url(/sr/images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+    background-size:cover;
+}
+// jump
+#jump {
+  color #ffffff;
+  text-decoration: none;
+  animation: heartAnimate 1s ease-in-out infinite;
+}

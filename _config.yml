@@ -114,3 +114,34 @@ depth: 20
 excerpt_excludes: []
 more_excludes: []
 hideWholePostExcerpts: true
+
+# neat压缩插件
+# 报错：看压缩后哪个文件访问报错，将其加入到 exclude，
+# 格式为：报错路径1/路径2/文件名.xxx ，其中的路径里的英文字母等量替换为 *
+# eg: ERROR Asset render failed: js/schemes/pisces.js exclude添加格式为：  - '**/*******/pisces.js'
+# 压缩html时不要跳过.swig文件\.md文件
+neat_enable: true
+# 压缩html
+neat_html:
+  enable: true
+  exclude:
+# 压缩css  
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude: 
+    - '**/*.min.js'
+    - '**/jquery.fancybox.pack.js'
+    - '**/index.js'
+    - '**/utils.js'
+    - '**/local-search.js' 
+    - '**/bookmark.js'  
+    - '**/next-boot.js' 
+    - '**/*******/pisces.js'
