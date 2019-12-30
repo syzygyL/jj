@@ -2,12 +2,12 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
-title: ming
-subtitle: '觉君'
-description: '一起吃瓜'
+# Site 注：subtitle 副标题 和 description 描述 都可以加某些 html标签
+title: Xm
+subtitle: '沉醉负白首，舒怀成大观</br>醒，亦在人间；梦，亦在人间~'
+description: '一起来吃瓜'
 keywords:
-author: ming
+author: min
 language: zh-CN
 timezone: ''
 
@@ -130,10 +130,11 @@ neat_css:
   enable: true
   exclude:
     - '**/*.min.css'
-# 压缩js
+    - '***/buttons.css'
+# 压缩js 暂时关闭压缩js文件
 neat_js:
-  enable: true
-  mangle: true
+  enable: false
+  mangle: false
   output:
   compress:
   exclude: 
@@ -144,4 +145,16 @@ neat_js:
     - '**/local-search.js' 
     - '**/bookmark.js'  
     - '**/next-boot.js' 
+    - '**/algolia-search.js' 
+    - '**/*******/muse.js'
     - '**/*******/pisces.js'
+    - '**/*******/pisces.js'
+    - '**/*******/pisces.js'
+
+# 云标签配置
+tag_cloud:
+    textFont: Trebuchet MS, Helvetica
+    textColor: '#0684bd'
+    textHeight: 20
+    outlineColor: '#E2E1D1'
+    maxSpeed: 0.2

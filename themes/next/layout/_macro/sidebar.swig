@@ -37,12 +37,30 @@
         {{- next_inject('sidebar') }}
       </div>
 
+
+      <!--引入云标签-->
+      {% if site.tags.length > 1 %}
+      <script type="text/javascript" charset="utf-8" src="/sr/js/tagcloud.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/sr/js/tagcanvas.js"></script>
+      <div class="widget-wrap">
+          <div id="myCanvasContainer" class="widget tagcloud">
+              <canvas width="250" height="250" id="resCanvas" style="width=100%">
+                  {{ list_tags() }}
+              </canvas>
+          </div>
+      </div>
+      {% endif %}      
+      <!--引入上级的粒子时钟-->
+      {% include '../clock.swig' %}
+
+      
+      <!--返回顶部-->
       {%- if theme.back2top.enable and theme.back2top.sidebar %}
         <div class="back-to-top motion-element">
           <i class="fa fa-arrow-up"></i>
           <span>0%</span>
         </div>
-      {%- endif %}
+      {%- endif %} 
 
     </div>
   </aside>

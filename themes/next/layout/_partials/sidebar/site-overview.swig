@@ -11,7 +11,8 @@
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
     {%- if config.archive_dir != '/' and site.posts.length > 0 %}
-      <div class="site-state-item site-state-posts">
+      <!--隐藏div块-->
+      <div class="site-state-item site-state-posts" id="showPosts">
         {%- if theme.menu.archives %}
           <a href="{{ url_for(theme.menu.archives.split('||')[0] | trim) }}">
         {% else %}
@@ -26,7 +27,7 @@
     {%- if site.categories.length > 0 %}
       {%- set categoriesPageQuery = site.pages.find({type: 'categories'}, {lean: true}) %}
       {%- set hasCategoriesPage = categoriesPageQuery.length > 0 %}
-      <div class="site-state-item site-state-categories">
+      <div class="site-state-item site-state-categories" id="showCategory">
         {%- if hasCategoriesPage %}
           {%- if theme.menu.categories %}
             <a href="{{ url_for(theme.menu.categories.split('||')[0] | trim) }}">
@@ -43,7 +44,7 @@
     {%- if site.tags.length > 0 %}
       {%- set tagsPageQuery = site.pages.find({type: 'tags'}, {lean: true}) %}
       {%- set hasTagsPage = tagsPageQuery.length > 0 %}
-      <div class="site-state-item site-state-tags">
+      <div class="site-state-item site-state-tags" id="showTag">
         {%- if hasTagsPage %}
           {%- if theme.menu.tags %}
             <a href="{{ url_for(theme.menu.tags.split('||')[0] | trim) }}">

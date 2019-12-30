@@ -15,15 +15,14 @@
 
 <div class="copyright">
 
-  <!--jump-->
-  <a href="/" id="jump" class="fa fa-yelp"></a>
+  <!--jump  class="fa fa-yelp" -->
+  <a href="https://xming1001.github.io/sr/"  class="fa fa-yelp" id="jump"></a>
 
-  <!--author-->
 
-  <span class="author" itemprop="copyrightHolder">&nbsp{{ theme.footer.copyright or author }}</span>
- 
   <!--加入小站运行天数-->
-  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  <span id="timeDate" style="color:rgba(241,241,241,0.8);">载入天数...</span>
+  <span id="times" style="color:rgba(241,241,241,0.8);">载入时分秒...</span>
+ 
   <script>
       var now = new Date(); 
       function createtime() { 
@@ -35,23 +34,23 @@
           mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
           seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
           snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-          document.getElementById("timeDate").innerHTML = " Runing "+dnum+" 天 "; 
+          document.getElementById("timeDate").innerHTML = " Xm 的小站已运行了 "+dnum+" 天 "; 
           document.getElementById("times").innerHTML = hnum + " 时 " + mnum + " 分 " + snum + " 秒"; 
       } 
   setInterval("createtime()",250);
   </script>
 
-  </br>
-  <i class="fa fa-gg">&nbsp小站</i>
-  <!--UV-->
-  <span id="busuanzi_container_site_uv">
-    总访客数：<span id="busuanzi_value_site_uv"></span>&nbsp人
-  </span>
-  <!--PV-->
-  <span id="busuanzi_container_site_pv">
-    ||&nbsp
-  <i class="fa fa-gg">&nbsp小站</i>总访问量：<span id="busuanzi_value_site_pv"></span>&nbsp次
-  </span>
+  <div style="color:rgba(241,241,241,0.8);">
+
+    <!--🍀UV-->
+    <a href="https://xming1001.github.io/sr/"  class="fa fa-yelp" style="color:rgba(241,241,241,0.8);" ></a>
+    小站总访客数：<span id="busuanzi_value_site_uv"></span>&nbsp人
+    <!--🍀PV-->
+    <a href="https://xming1001.github.io/sr/"  class="fa fa-yelp" style="color:rgba(241,241,241,0.8);" ></a>
+    小站总访问量：<span id="busuanzi_value_site_pv"></span>&nbsp次 
+    
+  </div>
+
 
 </div>
 

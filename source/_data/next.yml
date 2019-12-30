@@ -17,7 +17,7 @@ cache:
   enable: true
 
 # Remove unnecessary files after hexo generate.
-minify: false
+minify: true
 
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
@@ -120,14 +120,15 @@ scheme: Pisces
 # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
-  home: / || home
-  tags: /tags/ || tags
-  categories: /categories/ || th
-  archives: /archives/ || archive
-  about: /about/ || user
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  去首页: / || home
+  #tags: /tags/ || tags
+  分类树: /categories/ || th
+  关于我: /about/ || user
+  时间轴: /archives/ || archive
+
+  #schedule: /schedule/ || calendar  # 日程表
+  #sitemap: /sitemap.xml || sitemap  # 站点地图
+  #commonweal: /404/ || heartbeat    # 公益404
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -383,7 +384,7 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: true
+  enable: false
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
@@ -392,13 +393,13 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: true
+  enable: false
   permalink: https://github.com/yourname
   title: Follow me on GitHub
 
 # Online contact 
-#daovoice: true
-#daovoice_app_id: 3tsqml52rh2rwnwfhfj7qq7415kpfikbskug81jt
+daovoice: false
+daovoice_app_id: 8cd5b3da
 
 
 # ---------------------------------------------------------------
@@ -539,7 +540,7 @@ mediumzoom: false
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://github.com/ApoorvSaxena/lozad.js
-lazyload: false
+lazyload: true
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
@@ -629,12 +630,13 @@ valine:
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: 欢迎交流讨论... # Comment box placeholder
-  avatar: mm # Gravatar style
-  guest_info: nick,mail,link # Custom comment header
-  pageSize: 10 # Pagination size
+  # Gravatar style: mm 灰||wavatar 几何||retro 像素|| robohash 机器人
+  avatar: robohash # Gravatar style
+  guest_info: nick,link # Custom comment header
+  pageSize: 5 # Pagination size
   language: zh-cn # Language, available values: en, zh-cn
   visitor: false # Article reading statistic
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
+  comment_count: false # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   #post_meta_order: 0
@@ -765,6 +767,10 @@ local_search:
 # Swiftype Search API Key
 swiftype_key:
 
+# 侧栏粒子时钟
+diy_time:
+  runtime: true 
+  clock: true # 粒子时钟
 
 # ---------------------------------------------------------------
 # Chat Services
@@ -950,7 +956,7 @@ vendors:
   # Lazyload
   # lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
   # lazyload: //cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js
-  lazyload:
+  lazyload: //cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js
 
   # Pangu
   # pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
