@@ -167,8 +167,10 @@ sidebar:
 
 # Sidebar Avatar
 avatar:
-  # Replace the default image and set the url here.
+  # Replace the default image and set the url here. 头像
   url: https://s2.ax1x.com/2019/12/30/lla7HU.gif
+  #https://s2.ax1x.com/2019/12/31/l3wFdf.jpg
+  #https://s2.ax1x.com/2019/12/30/lla7HU.gif
   #/uploads/avatar.gif #/images/avatar.gif
   # If true, the avatar will be dispalyed in circle.
   rounded: false
