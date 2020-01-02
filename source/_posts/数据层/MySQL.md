@@ -6,10 +6,8 @@ tags:
   - note
 categories:
   - 数据层
+top: 10  
 ---
- 
-hexo new page "tags"
-
 >数据库管理系统(Database Management System)是一种操纵和管理数据库的大型软件，用于建立、使用和维护数据库，简称DBMS。
 
 # SQL必知必会
