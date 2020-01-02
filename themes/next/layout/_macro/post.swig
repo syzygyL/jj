@@ -183,6 +183,7 @@
         </div>
       {%- endif %}
 
+
       {%- if is_index %}
         {%- if post.description and theme.excerpt_description %}
           {{ post.description }}
@@ -196,7 +197,7 @@
           {%- endif %}
           <!--/noindex-->
         {% elif post.excerpt %}
-          {{ post.excerpt }}
+          {{ post.excerpt }}        
           <!--noindex-->
           {%- if theme.read_more_btn %}
             <div class="post-button">
@@ -232,7 +233,13 @@
       {%- if theme.creative_commons.license and theme.creative_commons.post %}
         {{ partial('_partials/post/post-copyright.swig') }}
       {%- endif %}
-
+      <!--结束标记-->
+      <div>
+        {% if not is_index and  theme.passage_end_tag.enable %}
+        {% include 'passage-end-tag.swig' %}
+        {% endif %}
+      </div>
+      
       <footer class="post-footer">
         {%- if post.tags and post.tags.length %}
           {%- if theme.tag_icon %}
