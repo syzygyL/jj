@@ -1042,6 +1042,6 @@ vendors:
 css: css
 js: js
 images: images
-
+# 文末标签
 passage_end_tag:
   enable: true

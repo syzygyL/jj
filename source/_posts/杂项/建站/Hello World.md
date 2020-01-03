@@ -2,13 +2,12 @@
 title: Hello World
 date: '2019/10/01 00:00:00'
 tags:
-  - tools
   - msic
 categories:
   - 杂项
   - 建站
-description: "会显示到文章页内的描述" 
-top: 20
+description: "此描述将会显示到文章页内" 
+top: 1
 ---
 
 {% cq %}
@@ -20,8 +19,6 @@ top: 20
 {% note primary %} Content (md partial supported) {% endnote %}
 {% note success %} Content (md partial supported) {% endnote %}
 {% note info %} Content (md partial supported) {% endnote %}
-
-_posts下新建文章：hexo new "文章名"
 
 Welcome to [Hexo](https://hexo.io/)! This is your very first post.Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
