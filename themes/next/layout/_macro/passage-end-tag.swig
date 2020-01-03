@@ -1,1 +1,1 @@
-<div>{% if not is_index %}<div style="text-align:center;color: #1b9af7;font-size:14px;">-------------本文结束 <i class="fa fa-hourglass-end"></i>感谢您的阅读-------------</div>{% endif %}</div>
+<div>{% if not is_index %}<div style="text-align:center;color: #1b9af7;font-size:14px;">----------本文结束&nbsp<i class="fa fa-hourglass-end"></i>&nbsp感谢您的阅读----------</div>{% endif %}</div>
