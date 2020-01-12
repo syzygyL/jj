@@ -10,9 +10,21 @@ description: "此描述将会显示到文章页内"
 top: 1
 ---
 
+MarkDown 语法兼容大部分 HTML 
+
+表格语法:
+第二行换为 ： `:-: | :-: | :-:` 可以使表格内容居中对齐
+|列名|列名|列名|
+|------|-------|----|
+||||
+
 {% cq %}
   此段为引用文本
 {% endcq %}
+
+
+`<center> 居中文字 </center>`
+
 
 {% note danger %} 警告 (红色) {% endnote %}
 {% note default %} 默认 (灰色) {% endnote %}
