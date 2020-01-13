@@ -26,6 +26,25 @@ cookie 储存在用户本地终端上的数据（不超过 4KB 的小型文本�
 |Path|定义了 Web 站点上可以访问该 Cookie 的目录|
 |Domain|指定了可以访问该 Cookie 的 Web 站点或域| 
 
+### 使用 cookie
+
+```java
+...
+// 向客户端添加 cookie
+// 1.创建一个 Cookie 对象 （k/v 中不能包含 [ ] ( ) = , " / ? @ : ;）
+Cookie cookie = new Cookie("key","value"); 
+// 2.设置最大生存周期(单位 s)
+cookie.setMaxAge(60*60*24); 
+// 3.发送 Cookie 到 HTTP 响应头
+response.addCookie(cookie);
+...
+```
+
+```java
+// 读取客户端 cookie
+cookies = request.getCookies();
+
+```
 
 ## Session
 
