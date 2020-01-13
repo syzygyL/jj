@@ -1,5 +1,5 @@
 ---
-title: SE05-函数式与 Stream 流
+title: SE05-Lambda和Stream
 tags:
   - note
 comments: false
