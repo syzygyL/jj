@@ -2,7 +2,6 @@
 title: Hello World
 date: '2019/10/01 00:00:00'
 tags:
-  - msic
 categories:
   - 杂项
   - 建站
@@ -10,20 +9,14 @@ description: "此描述将会显示到文章页内"
 top: 1
 ---
 
-MarkDown 语法兼容大部分 HTML 
-
-表格语法:
-第二行换为 ： `:-: | :-: | :-:` 可以使表格内容居中对齐
-|列名|列名|列名|
-|------|-------|----|
-||||
 
 {% cq %}
   此段为引用文本
 {% endcq %}
 
+MarkDown 语法兼容大部分 HTML 
 
-`<center> 居中文字 </center>`
+<center> 居中文字 </center>
 
 
 {% note danger %} 警告 (红色) {% endnote %}
@@ -31,6 +24,7 @@ MarkDown 语法兼容大部分 HTML
 {% note primary %} 主要 (紫色) {% endnote %}
 {% note success %} 成功 (绿色) {% endnote %}
 {% note info %} 生成 (蓝色)) {% endnote %}
+
 
 Welcome to [Hexo](https://hexo.io/)! This is your very first post.Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
