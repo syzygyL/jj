@@ -61,5 +61,6 @@ session 会话技术是基于 cookie 的, 默认在一次会话中，也就是�
 setAttribute(String name, Object o) // 存储 K/V 数据到 session 域
 getAttribute(String name)     // 通过 K 获取到 V 
 removeAttribute(String name)  // 移除指定 K
+session.invalidate()         // 销毁 session 
 
 ### session 活化/钝化
