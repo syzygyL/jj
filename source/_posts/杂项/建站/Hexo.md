@@ -60,7 +60,7 @@ top:
 
 > hexo g
 
-# 托管至Github
+## 托管至Github
 
 - 新建一个代码仓库，强制要求名字格式为
     `你的登录名.github.io`
