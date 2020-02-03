@@ -23,8 +23,8 @@ after script: # 最后执行的命令
 
 branches:
   only:
-    - master #触发持续集成的分支
+    - master #指定触发持续集成的分支
     
 env:
   global: 
-    - GH_REF: github.com/xming1001/sr.git #就是你 github上存放静态博客最终文件的合库地址末尾加上git
+    - GH_REF: github.com/xming1001/sr.git # github上存放静态博客info的仓库地址末尾加上 `.git`
