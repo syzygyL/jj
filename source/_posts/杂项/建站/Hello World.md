@@ -9,7 +9,6 @@ description: "此描述将会显示到文章页内"
 top: 1
 ---
 
-
 {% cq %}
   此段为引用文本
 {% endcq %}
@@ -18,17 +17,18 @@ MarkDown 语法兼容大部分 HTML
 
 <center> 居中文字 </center>
 
-
 {% note danger %} 警告 (红色) {% endnote %}
 {% note default %} 默认 (灰色) {% endnote %}
 {% note primary %} 主要 (紫色) {% endnote %}
 {% note success %} 成功 (绿色) {% endnote %}
 {% note info %} 生成 (蓝色)) {% endnote %}
 
+## [快速入门](#QuickStart)
 
 Welcome to [Hexo](https://hexo.io/)! This is your very first post.Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+
+## QuickStart
 
 ### Create a new post
 
