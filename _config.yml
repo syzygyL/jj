@@ -161,6 +161,6 @@ tag_cloud:
     outlineColor: '#E2E1D1'
     maxSpeed: 0.2
     
-# 锚点
+# 锚点 ====没生效====
 marked:
   anchorAlias: true
