@@ -528,3 +528,5 @@ public class SysInterceptor implements HandlerInterceptor {
 ```
 
 ---
+
+Spring 提供了 AbstractAnnotationConfigDispatcherServletInitializer 类（也是WebApplicationInitializer的子类），可以实现 ssm 纯注解开发
