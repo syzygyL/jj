@@ -3,8 +3,9 @@ title: ZooKeeper
 tags:
   - note
 comments: false
-date: 2020-02-25 09:19:51
 categories:
+  - 应用框架
+date: 2020-02-25 09:19:51
 description:
 top:
 ---
