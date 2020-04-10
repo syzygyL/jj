@@ -47,8 +47,6 @@ MVC全名是 Model View Controller 模型视图控制器。
 
 视图解析器: org.springframework.web.servlet.ViewResolver
 
----
-
 ### 请求参数的绑定
 
 表单提交的数据都是k=v格式的 username=xma&password=1001，SpringMVC 的参数绑定过程是把表单提交的请求参数，作为控制器中方法的参数进行绑定的，要求提交表单的键名和参数的名称是相同的
@@ -62,8 +60,6 @@ MVC全名是 Model View Controller 模型视图控制器。
 **类型转换器**
 
 **获取原生servlet API**
-
----
 
 ### 常用注解
 
@@ -419,8 +415,6 @@ public class SessionController {
 }
 ```
 
----
-
 ### 响应和结果视图
 
 响应 String
@@ -526,7 +520,5 @@ public class SysInterceptor implements HandlerInterceptor {
 </mvc:interceptors>
 
 ```
-
----
 
 Spring 提供了 AbstractAnnotationConfigDispatcherServletInitializer 类（也是WebApplicationInitializer的子类），可以实现 ssm 纯注解开发

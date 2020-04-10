@@ -3,8 +3,9 @@ title: SpringBoot
 tags:
   - note
 comments: false
-date: 2020-03-22 09:31:28
 categories:
+  - 应用框架
+date: 2020-03-22 09:31:28
 description:
 top:
 ---
@@ -12,14 +13,10 @@ top:
 ## SpringBoot
 
 ### 简介
-用来简化spring应用的初始搭建以及开发过程 使用特定的方式来进行配置（properties或yml文件）
-创建独立的spring引用程序 main方法运行 
-嵌入的Tomcat 无需部署war文件 
-简化maven配置 
-自动配置spring添加对应功能starter自动化配置 
-答：spring boot来简化spring应用开发，约定大于配置，去繁从简，just run就能创建一个独立的，产品级别的应用
 
-auto-configuration、starters、cli、actuator
+用来简化spring应用的初始搭建以及开发过程 使用特定的方式来进行配置（properties或yml文件），创建独立的spring引导程序，启动main方法运行一个springboot项目，拥有嵌入的 Tomcat 无需部署war文件，简化maven配置（依赖传递性），添加对应功能的starter自动化配置需要的参数。
+
+总结：spring boot来简化spring应用开发，约定大于配置，去繁从简，just run就能创建一个独立的，产品级别的应用
 
 #### 项目运行命令: nohup和&的区别
 
@@ -51,7 +48,6 @@ boostrap 里面的属性不能被覆盖
 一些固定的不能被覆盖的属性
 一些加密/解密的场景；
 
-
 #### 多配置文件
 
 mvn 打包(注意: 要在`poxm.xml`同级目录下)
@@ -59,7 +55,6 @@ mvn 打包(注意: 要在`poxm.xml`同级目录下)
 ```
 mvn clean package -Dmaven.test.skip=true -P prod
 ```
-
 
 #### 扩展
 

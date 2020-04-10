@@ -3,8 +3,9 @@ title: SpringCloud
 tags:
   - note
 comments: false
-date: 2020-03-24 13:59:11
 categories:
+  - 应用框架
+date: 2020-03-24 13:59:11
 description:
 top:
 ---
