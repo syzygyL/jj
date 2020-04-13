@@ -71,7 +71,7 @@ Master 选举: 在分布式环境中，有些业务逻辑只需要集群中的�
 
 #### 集群角色
 
-zookeeper 引入了不同以往的 master 和 slave 全新角色
+zookeeper 摒弃以往的`Master`/`Slave`角色，引入了新的
 
 * Leader: 领导者负责进行投票的发起和决议，更新系统状态。
 * Follower: 跟随者用于接收客户请求并向客户端返回结果，在选主过程中参与投票

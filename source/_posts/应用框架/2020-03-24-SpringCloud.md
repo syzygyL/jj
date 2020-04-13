@@ -182,8 +182,8 @@ eureka:
 3. 熔断触发错误比例阈值(50%)：circuitBreaker.errorThresholdPercentage
 4. 熔断超时时间(1000毫秒)：execution.isolation.thread.timeoutInMilliseconds
 默认值：1000
-在THREAD模式下，达到超时时间，可以中断
-在SEMAPHORE模式下，会等待执行完成后，再去判断是否超时
+在`THREAD`模式下，达到超时时间，可以中断
+在`SEMAPHORE`模式下，会等待执行完成后，再去判断是否超时
 5. 隔离策略(THREAD)：execution.isolation.strategy
 默认使用THREAD模式，以下几种情况可以使用SEMAPHORE模式：
 * 只想控制并发度
