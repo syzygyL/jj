@@ -3,8 +3,10 @@ title: Thymeleaf
 tags:
   - note
 comments: false
-date: 2020-04-14 15:39:42
 categories:
+  - 杂项
+  - 模板引擎
+date: 2020-04-14 15:39:42
 description:
 top:
 ---

@@ -3,8 +3,9 @@ title: Elasticsearch
 tags:
   - note
 comments: false
-date: 2020-04-13 21:28:58
 categories:
+  - 中间件技术
+date: 2020-04-13 21:28:58
 description:
 top:
 ---
