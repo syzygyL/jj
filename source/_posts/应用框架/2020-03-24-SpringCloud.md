@@ -48,6 +48,8 @@ Eureka 是由`Netflix`开发的一款服务治理开源框架，Spring-cloud对�
 
 {%endnote%}
 
+优势: 支持用户认证，支持注册列表缓存（容错），保护模式（解决分区故障），健康检查
+
 #### 服务提供者
 
 服务提供者要向`EurekaServer`进行服务注册，并完成服务续约等工作。
@@ -79,6 +81,13 @@ lease-renewal-interval-in-seconds:
 租约续约间隔时间，默认30秒，类似于每隔30天再次和房东签订一个有效期为90天的合同
 服务超过90秒没有发生心跳，EurekaServer会将服务从列表移除[ 前提是EurekaServer关闭了自我保护 ]
 
+* 开启健康检查
+
+例如Mysql服务下线时自动下线此服务，
+
+```text
+eureka.client.healthcheck.enable=true
+```
 #### 服务消费者
 
 * 获取注册中心服务列表(前提：`eureka.client.fetch-registry=true`)
