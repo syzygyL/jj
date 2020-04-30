@@ -61,3 +61,35 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+## next6/7之后，配置`_config.yml`的摘要/预览失效问题
+
+解决方法：使用`<!-- more -->`标签包裹你不需要在首页展示的内容
+
+```text
+
+这里放摘要
+
+<!-- more -->
+...
+这里放正文
+...
+<!-- more -->
+
+```
+
+还可以这样
+```text
+
+这里放摘要
+<!-- more -->
+<!-- more -->
+...
+这里放正文
+...
+
+```
+
+
+
+配置后，敲个本地调试命令`hexo s`，浏览器输入`http://localhost:4000/`即可看到此时首页只显示摘要，而不显示后面的内容了。

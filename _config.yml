@@ -5,7 +5,7 @@
 # Site 注：subtitle 副标题 和 description 描述 都可以加某些 html标签
 title: Xm
 subtitle: '沉醉负白首，舒怀成大观</br>醒，亦在人间；梦，亦在人间~'
-description: '一起来吃瓜'
+description: '欢迎瓜友~'
 keywords:
 author: min
 language: zh-CN
@@ -109,7 +109,7 @@ auto_category:
  enable: true
  depth: 
 
-# 阅读全文
+# 阅读全文（next6/7后已失效）
 excerpt:
 depth: 20
 excerpt_excludes: []

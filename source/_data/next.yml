@@ -124,7 +124,7 @@ menu:
   #tags: /tags/ || tags
   分类树: /categories/ || th
   关于我: /about/ || user
-  时间轴: /archives/ || archive
+  时间轴: /archives/ || heartbeat
 
   #schedule: /schedule/ || calendar  # 日程表
   #sitemap: /sitemap.xml || sitemap  # 站点地图
