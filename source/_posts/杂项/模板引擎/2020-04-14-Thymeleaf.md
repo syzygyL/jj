@@ -22,10 +22,9 @@ FreeMarker是一个用Java语言编写的模板引擎，它基于模板来生成
 2.3. Undertow
 3、反正就是spring推荐themleaf，就学学themleaf。
 
-18.8.31
-在java领域，表现层技术主要有三种：jsp、freemarker、velocity。
+### 同类技术对比
 
-jsp是大家最熟悉的技术
+#### JSP
 优点：
 1、功能强大，可以写java代码
 2、支持jsp标签（jsp tag）
@@ -35,7 +34,8 @@ jsp是大家最熟悉的技术
 缺点：
 jsp没有明显缺点，非要挑点骨头那就是，由于可以编写java代码，如使用不当容易破坏mvc结构。
 
-velocity是较早出现的用于代替jsp的模板语言
+#### Velocity
+
 优点：
 1、不能编写java代码，可以实现严格的mvc分离
 2、性能良好，据说比jsp性能还要好些
@@ -46,7 +46,7 @@ velocity是较早出现的用于代替jsp的模板语言
 3、对jsp标签支持不够好
 4、已经很久很久没有维护了。
 
-freemarker
+#### Freemarker
 优点：
 1、不能编写java代码，可以实现严格的mvc分离
 2、性能非常不错
@@ -65,7 +65,7 @@ freemarker
 4、支持jsp标签
 5、可以实现严格的mvc分离
 
-thymeleaf
+#### Thymeleaf
 Thymeleaf是个XML/XHTML/HTML5模板引擎，可以用于Web与非Web应用。
 Thymeleaf的主要目标在于提供一种可被浏览器正确显示的、格式良好的模板创建方式，因此也可以用作静态建模。你可以使用它创建经过验证的XML与HTML模板。相对于编写逻辑或代码，开发者只需将标签属性添加到模板中即可。接下来，这些标签属性就会在DOM（文档对象模型）上执行预先制定好的逻辑。Thymeleaf的可扩展性也非常棒。你可以使用它定义自己的模板属性集合，这样就可以计算自定义表达式并使用自定义逻辑。这意味着Thymeleaf还可以作为模板引擎框架。
 
@@ -73,3 +73,5 @@ Thymeleaf
 
 优点：静态html嵌入标签属性，浏览器可以直接打开模板文件，便于前后端联调，SprinBoot 官方推荐方案。
 缺点：模板必须符合xml规范
+
+
