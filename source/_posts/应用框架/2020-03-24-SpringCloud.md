@@ -139,6 +139,14 @@ eureka:
 遇到的坑: java.net.UnknownHostException，场景：eureka服务治理，ribbon负载均衡时，消费端通过`RestTemplate`调用服务端时出现
 解决方法: 在主引导类的`RestTemplate`bean 配置中添加负载均衡注解`@LoadBalanced`
 
+常见算法
+
+随机
+轮询
+一致性hash
+加权
+自定义
+
 ### Hystrix 熔断器组件
 
 **级联故障**
